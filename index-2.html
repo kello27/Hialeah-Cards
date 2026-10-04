@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Back to Hialeah &mdash; Beat Board</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+background:#2a2520;color:#e8e3d8;padding:24px 20px 60px;line-height:1.45}
+header{max-width:1400px;margin:0 auto 22px}
+h1{font-size:26px;font-weight:650;letter-spacing:-.01em}
+.sub{font-size:13.5px;opacity:.62;margin-top:5px}
+.bar{max-width:1400px;margin:0 auto 24px;display:flex;gap:10px;align-items:center;flex-wrap:wrap}
+button{font:inherit;font-size:13px;padding:8px 15px;border-radius:5px;cursor:pointer;
+background:rgba(232,227,216,.09);border:1px solid rgba(232,227,216,.28);color:#e8e3d8}
+button:hover{background:rgba(232,227,216,.16)}
+button.on{background:rgba(232,227,216,.26);border-color:rgba(232,227,216,.6)}
+.count{font-size:12.5px;opacity:.5}
+.board{max-width:1400px;margin:0 auto;display:grid;gap:22px;
+grid-template-columns:repeat(4,1fr);align-items:start}
+.col{display:flex;flex-direction:column;gap:11px;min-width:0}
+h2{font-size:11.5px;font-weight:700;letter-spacing:.05em;opacity:.5;margin-bottom:3px}
+.card{border-radius:5px;padding:12px 13px;box-shadow:0 3px 9px rgba(0,0,0,.32)}
+h3{font-size:12.5px;font-weight:700;margin-bottom:5px;line-height:1.3}
+.sum{font-size:11px;opacity:.88}
+.body{font-size:11px;margin-top:8px;padding-top:8px;
+border-top:1px solid rgba(0,0,0,.16);display:none}
+body.details .body{display:block}
+@media(max-width:1100px){.board{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:680px){.board{grid-template-columns:1fr}body{padding:18px 14px 50px}}
+</style>
+</head>
+<body>
+<header>
+<h1>Back to Hialeah</h1>
+<div class="sub">Beat board &middot; 30 beats &middot; four acts</div>
+</header>
+<div class="bar">
+<button id="toggle" type="button">Show detail</button>
+<span class="count">Read-only</span>
+</div>
+<main class="board">
+<section class="col">
+<h2>ACT ONE — THE GIFT</h2>
+<article class="card" style="background:#B9CBDD;color:#20303E">
+<h3>♪ 1. A Morning in Hialeah</h3>
+<p class="sum">♪ MUSICAL NUMBER: opening ensemble. Hialeah's warmth, Hugh's hustle, and the power structure at its edges.</p>
+<p class="body">MUSICAL NUMBER: one big opening ensemble weaving together Hialeah's world, Hugh's hustle, and its power structure. 1984. 12-year-old Hugh walks past the corner cafe, greeted by the old men playing dominoes. Bright, lived-in single-family homes, chalk art on concrete, murals on every surface the block can claim, cafes and botánicas. Mom's line: "I'm proud of your hard work, mijo, but don't let work take over your life." Hugh's promise to do great things. His jobs plant Willy at the marina and the shared charter-boat dream, and how thin the line is between the hustle and outright theft. His art, the drawing, the painting, the shed, stays private. A Rooster outside a storefront and "insurance" collectors make their rounds like it's just another Tuesday. The Roosters and Raccoons are established as the neighborhood's street-level power, with Nina and Vera catching them doing something quietly shady, trading a look, already tracking their movements: the neighborhood's unofficial eyes and ears. The camera slowly moves in on the racetrack in the distance.</p>
+</article>
+<article class="card" style="background:#BFD6BF;color:#22331F">
+<h3>2. Ray's Shop</h3>
+<p class="sum">Big-brother banter, new paints from "an old santera," and a flicker of fear when the Roosters pass.</p>
+<p class="body">The kids walk into Ray's pawn shop. Ray's warmth toward Hugh is big-brother banter: he teases Hugh to paint himself a girlfriend, Hugh threatens him with a fart sandwich, and the whole shop cracks up until a customer asks about a double VCR. Ray has more paints in, this time from "an old santera," a magic lady who's an expert in all things magical and spiritual and won't say why she's giving away her nice supplies. Ray catches sight of the Roosters walking by outside the window, goes tense, watches until they're out of sight, then is back to his warm self. Outside, Timmy asks if Ray looked scared for a second. Vera hopes the Roosters leave him alone.</p>
+</article>
+<article class="card" style="background:#E8DAB3;color:#3A2E1F">
+<h3>3. 3 Juan's Pizza</h3>
+<p class="sum">A free slice from three generations of Juans, and the whispered dreams Hugh overhears.</p>
+<p class="body">Hugh and Prince pop in and the Juans give Hugh a free slice. Juan 2 makes dough ("let gravity do the work, that's a lesson for life too, mijo") and Juan 3 offers a slice to go. Two customers whisper: the Garcias just sold, scared off, same dreams. Hugh leans in and we see what he imagines they're saying: rickety pipes, cracking foundations, leaky roofs, vermin, flooding, fire. "Sounds familiar. That's how our building is, since always." One Juan admits the dreams started about a month ago, another shushes him, and the third loudly insists he sleeps great and leaves awkwardly. Everyone pretends it wasn't weird. It doesn't work. Hugh doesn't think much of it.</p>
+</article>
+<article class="card" style="background:#E8DAB3;color:#3A2E1F">
+<h3>4. Inciting Incident</h3>
+<p class="sum">Mom leaves for her shift. Dario climbs in the window begging bail money for Junior. Hugh gives up his AC savings.</p>
+<p class="body">At home, Hugh puts candy in an offering bowl by a saint statue. Mom says bye on her way to work ("Mama's gotta work baby, be good till I'm back"), and dinner's on the table. Hugh eats alone. Dario bangs on the window and gets stuck halfway in: they got Junior, who was trying to hit Ray's pawn shop, and Hugh is the only one he knows with money. Hugh drifts into an AC-unit ad: his mom walks into a chilly living room and he wraps a blanket around her. He's saved almost enough for the real thing, and he's been working this hard for her. Dario won't say why they were robbing but looks scared for the first time, and Hugh gives in. He gets the money from his shoebox, looks at the sputtering window unit, sighs, and puts the box away. His dream, let go for a friend.</p>
+</article>
+<article class="card" style="background:#E8DAB3;color:#3A2E1F">
+<h3>♪ 5. The Painted World</h3>
+<p class="sum">♪ MUSICAL NUMBER: Hugh's I Want song. The shed becomes a portal into an idealized Hialeah. Prince's grandma names the gift.</p>
+<p class="body">MUSICAL NUMBER: Hugh's "I Want" song, wonder and longing as the gift shows itself, with the ache of the day underneath: Junior, the money, the guilt. The melody The Realization will echo and The Gift Reignites will answer. In the old garden shed behind his building, almost lost in the overgrowth, Hugh runs his ritual to a music tape: windows opened just so, room fan on, paint squeezed out, bristles slapped dry against the easel, a fresh cardboard canvas. He starts with abstract color, and a park becomes clear. It's Hialeah the way he dreams it could be: no Roosters, no Raccoons, a park full of neighbors, cookouts, dancing, kids playing, a fountain where a child makes a wish, and an exotic green bird that notices. Leaving the shed, he finds Prince on a bench, who invites him up for sweets with his grandma. She tells Hugh his mother's art once covered the old neighborhood before she traded the paints for every work hour she could get, that Hugh has her talent and passion, and that Prince is learning his own magic too.</p>
+</article>
+<article class="card" style="background:#B9CBDD;color:#20303E">
+<h3>6. First Brush with Magic</h3>
+<p class="sum">The painted bird flies to the mayor's window and plants the park idea in his sleep.</p>
+<p class="body">Back in the painting, the green bird twitches, a leg emerges into 3D, then a wing, then the whole bird. It flies through a cracked window, across town to a big house, lands on the mayor's pillow, and whispers in his ear. The mayor smiles as he dreams. PLOT POINT ONE: the gift's first real ripple into the world. In the morning Mom is at the kitchen table when she should be asleep, and Hugh senses something's off. She almost says it, then tells him to get ready for school. On the way, a Rooster (Doc) and two Raccoons (one called Stripes) tell the kids the park is not for playing, it's for business.</p>
+</article>
+<article class="card" style="background:#E8DAB3;color:#3A2E1F">
+<h3>7. Crooked Cops</h3>
+<p class="sum">The park announcement on the classroom TV, then cops arrest Hugh as an accomplice. Vera records the shakedown.</p>
+<p class="body">Dario's desk is empty. The teacher turns on the TV: the mayor announces the park, "a place for gathering together," words Hugh recognizes from his own painting. The class cheers, and then police walk in asking for Hugh Castiano. In the hallway they lean on him: Dario said he's good for it. Junior made bail, then he and Dario got caught breaking into a home together, and now Dario says Hugh can bail him out and knew about the plan. Hugh has no money left and says so. "Well, that settles it." Vera records the whole thing, hiding behind a student art display.</p>
+</article>
+<article class="card" style="background:#E8DAB3;color:#3A2E1F">
+<h3>8. Juvie Art</h3>
+<p class="sum">Called a rat and eating alone, Hugh draws, and the cell block turns. Junior tears up a drawing.</p>
+<p class="body">In the crowded juvenile cell, a big kid shoves Hugh and calls him a little rat, and the gossip spreads across the cell. Nobody will sit with him at dinner. Dario gives a half-secret wave, Junior notices and shoots Hugh the stink eye, and Dario gets reprimanded. Then Hugh sketches a still life, clearly somewhere else while he draws, and an inmate asks for one for his daughter's fourth birthday. One by one the others ask too, and the vibe shifts. Junior, furious, makes Dario hand over his drawing, a sea creature on the moon, and tears it in half. The room goes quiet, and Junior backs down, uneasy. At night the drawings' characters whisper into the kids' dreams, and the next day they're friendlier and more connected. Junior: "I gotta get the hell outta here."</p>
+</article>
+<article class="card" style="background:#E8DAB3;color:#3A2E1F">
+<h3>9. The Twins' Rescue</h3>
+<p class="sum">Nina and Vera march into the station with the recording. Hugh walks out to a cell block's farewell.</p>
+<p class="body">Nina and Vera march up to the front desk with folders under their arms: "We are here to free Hugh Castiano. He's innocent and we have proof." The adults shake their heads in defeat and give in. In the cell, a guard calls Hugh out. Dario returns a silent farewell, trying not to show his fear and sadness. Then a prisoner says adios, then another, then groups of young boys yelling goodbye and thanks for the pictures. Hugh is touched and a bit bashful as he walks toward freedom.</p>
+</article>
+<article class="card" style="background:#B9CBDD;color:#20303E">
+<h3>10. Midpoint Montage</h3>
+<p class="sum">The park rises and the Roosters make it a casino. Reyes works the dreams. Hugh gets chased.</p>
+<p class="body">Time-lapse: a new playground, trees, benches, courts, soccer goals. By day, families. By night, the Raccoons and Roosters run bolita gambling from the benches, and they shake down every business: a bakery, a plumber, a real estate office, a food stand, even a lemonade-stand kid whose parents just comfort him. This is how it works. Don't talk about it. Above the racetrack, Reyes in an office piled with books, candles, and dark magic bric-a-brac astral-projects himself and chants directions to stick figures to find the sleeping residents and give them dreams of their house falling apart, of feeling unsafe, and finally that the new apartment complex is the only salvation. The Raccoons, and the kids they recruit, plant the figures under beds. Homeowners wake in a sweat. Then the Roosters are at the door, pitching El Pinon. MIDPOINT. Hugh, back from his boat-cleaning job, gets circled by the Raccoons and bolts through alleys to 3 Juan's. The Juans hide him out the back but tell him not to use them as an escape anymore. Mom's not home, and he dumps the dinner she made.</p>
+</article>
+<article class="card" style="background:#CBBBD9;color:#2E2338">
+<h3>♪ 11. The Racetrack</h3>
+<p class="sum">♪ MUSICAL NUMBER: the villain song, sung from the private box. Five kids sneak in and hear the scheme.</p>
+<p class="body">MUSICAL NUMBER: a slinky, catchy, quietly horrifying villain number for the Buyers, sung from their private box at the racetrack. Hugh, Vera, Nina, Dario, and Willy the Panda sneak in for a dare. The twins split everyone up with trapper-keeper plans. Hugh and Vera try the service elevator, then take the stairs when the operator reaches for a walkie-talkie. Willy, who can't exactly climb, tumbles down a flight. Vera strolls into a box and restocks the owners' fridge with limon soda. In Box 2 the kids hide as the Roosters, the mayor, and Reyes come in. The Buyers work the mayor in a tense negotiation over zoning and permits that tips into song: a small group of wealthy men with a hand on the zoning board, quietly buying up Hialeah's cheap housing, running the block from a box nobody downstairs ever sees. Reyes says little, unexplained, unsettling, something dark clinging to him the kids don't understand yet. They get out before anyone catches them, but five kids are now carrying a secret too big for them, and each will handle the weight of it differently.</p>
+</article>
+<article class="card" style="background:#E8DAB3;color:#3A2E1F">
+<h3>12. The Ultimatum</h3>
+<p class="sum">Dario says the crew will put them on a boat to nowhere. Hugh refuses and calls him a leech.</p>
+<p class="body">Dario corners Hugh, rattled: the crew knows everything, and they've got one shot to get out of trouble. "They said they're going to put us on a boat to nowhere, and I think they definitely mean it." Hugh won't say a word, and besides, who would he tell? The police locked him up for not bribing them. He tells Dario he's no friend, a damn leech, him and his stupid brother, and runs home. Dario yells after him that they're brothers. A Rooster steps into view across the street, and Dario turns straight into the waiting Raccoons: how can they send Hugh a message, what can they take from him to make an example? Dario: "Don't hurt him. Just scare him. I know how to get through to him, follow me."</p>
+</article>
+<article class="card" style="background:#E3B9B4;color:#3E2320">
+<h3>13. The Fire</h3>
+<p class="sum">Hugh's last painting. The portal darkens, the shed burns, and he and Mom leave. Act One ends.</p>
+<p class="body">Hugh bursts into the shed and slumps, tries to hold back tears, and memories cut in: Dario at his window, Junior tearing up the drawing, and Mom when he was four, handing him markers: "Don't hide your emotions. Let them all out, my love." She looks on proud but scared, saying a silent prayer. He gets a blank canvas, steps out to fill a bowl of water, and doesn't see the Raccoons watching from the bushes with Dario. Dario: "You said you were going to send him a message." Raccoon: "I lied." As one creeps toward the shed, reaching into his pocket, Hugh paints. The canvas becomes a portal: reds and oranges, abstract swirls, a heartbeat, then dark purples and black shapes flow in. He coughs, drops the brush, and snaps back to find the shed an inferno. He crashes through the door. Prince's grandma and the neighbors rush to him, and Mom sprints over. Hugh: "I was lost in my stupid painting." Grandma: "It's not stupid, it's your gift." Hugh: "I'm never doing that again." Grandma: "You can't leave, you can't let them win." Hugh and Mom walk off holding each other. Prince starts to say something, but Hugh just shakes his head and brushes past, leaving Prince looking subtly blamed. ACT ONE ENDS.</p>
+</article>
+</section>
+<section class="col">
+<h2>ACT TWO A — THE EMPTY CLIMB</h2>
+<article class="card" style="background:#B9CBDD;color:#20303E">
+<h3>14. Ten Years Later</h3>
+<p class="sum">Prince carries the fight alone. The twins and Willy get Hugh's letter.</p>
+<p class="body">10 YEARS LATER. In the park, Prince picks up trash while Roosters and Raccoons conspire in the background. At a construction zone he kneels as if to tie his shoe, looks around, and draws his Haitian ritual drawings by the machines: the quiet sabotage he's carried on alone. At the cafe, Vera, Nina, and Willy, grown now and in their early twenties, read Hugh's letter. He's coming back for his mom's funeral and would love to catch up with anyone from the old days. He's engaged, which Nina uses to tease Vera that her little heart is broken (not true, says Vera). Willy says the Roosters control more and more of the boats, and that he gets nightmares of bad things happening after he thinks about calling the police. The twins, who tell him to call anyway, have a plan: a charter-boat party for Hugh, with his old amigo, fulfilling their childhood dream together. "We've gotta get our Nancy Drew on." "IT'S ON!"</p>
+</article>
+<article class="card" style="background:#CBBBD9;color:#2E2338">
+<h3>15. Reinvention Montage</h3>
+<p class="sum">Told through Hugh's letter: AZ heat, a cooler, a stand, a restaurant, Judy, and Mom's death.</p>
+<p class="body">Hugh's letter, as flashback. They arrive in Arizona in July, staying with relatives, in heat that feels like hell on earth: door handles burn, seat belts burn, the AC blows hot air. It also feels amazing to be free of Hialeah. He keeps to himself at school, which just means more time for stacking bills. He sells Cuban-American food from a cooler evenings and weekends, then starts a stand, and the stands multiply with Mom and others manning them. College, a business degree, friends made. Then his restaurant is bustling, with newspaper headlines and a pager buzz that makes him smile. He calls Judy, 24, the manager at a pottery shop, and they meet for tacos. She's a huge help keeping him focused and motivated. They move into a fancy condo together, and Hugh hangs boring pictures only. Then word about his mom, a rush to the hospital, too late. In the restaurant, the front room is hectic and less friendly, while in the back the rich and celebrity types cut deals in private dining rooms, where snakes and coyotes are all smiles with a glint of violence in their eyes. They remind him of the Roosters and Raccoons, though he can't say exactly how, and he does nothing because they pay so well. A red, pink, and gold sunset catches his eye before a server bumps him back to work. He hasn't touched a brush since the fire.</p>
+</article>
+<article class="card" style="background:#E8DAB3;color:#3A2E1F">
+<h3>16. Mom's Things</h3>
+<p class="sum">A paint-covered photo and a stack of letters from his father. Hugh walks into the desert.</p>
+<p class="body">Going through his mom's things, Hugh finds a picture of himself, paint-covered and happy in his art shed, and a stack of letters from "Juan," his dad. They talk about wanting to leave Cuba but being stuck, and that he'll be there as soon as possible, planning to take a tiny boat. They prove his father never abandoned them: decades ago he fled the same operation with his own mother, an escape that mirrors Hugh's own. He never made it out and died in a Cuban prison instead. Judy sees the picture and wants to talk about it. Hugh walks away, into the desert, and reflects.</p>
+</article>
+<article class="card" style="background:#E3B9B4;color:#3E2320">
+<h3>♪ 17. The Realization</h3>
+<p class="sum">♪ MUSICAL NUMBER: a short echo of The Painted World's melody. In the desert, Hugh decides to go home.</p>
+<p class="body">MUSICAL NUMBER: short by design, the melody's one glancing return, not a reconstruction. A mirror-doodle resolves into a decision, with Judy's one line: go home. The desert reckoning is distilled to its quietest size, like a held breath let out, the smallest, plainest song in the film. He remembers moving to AZ with his mom. And then the fire. Hugh gets back home, and Judy can tell he has something important to say. Hugh: "Pack your bags, my love. We're going to Hialeah." He's decided to hold his mother's funeral there.</p>
+</article>
+<article class="card" style="background:#B9CBDD;color:#20303E">
+<h3>18. Homecoming</h3>
+<p class="sum">Hugh and Judy land. Dario and Junior at the cafe, the funeral, the reunion, a gray Hialeah.</p>
+<p class="body">Plane, taxi, a walk through the streets. At the cafe, Hugh spots Dario and Junior, grown, meeting a shady-looking business guy. Hugh and Dario make eye contact and both pretend not to see the other. Mom's funeral at the church: Hugh's friends in the crowd, Prince's grandma, Ray, the Juans. At a cafe after, Vera, Nina, Willy, and Prince, still friends, tell Hugh what he's missed. The mayor has been in on it for years. Willy finally started his charter business while Hugh was away, and the operation has corrupted it into a front for its dirty money. The twins have been quietly building a case for years. Hugh: what if we go to the cops with our story? Willy: it's been over 10 years. Nina: it matters, and it's a good start. Vera: it's only a start, we need new evidence. Together: "Get our Nancy Drew on!" Judy loves Nancy Drew. At Ray's shop, same as ever from the outside, Ray is thrilled and tells Hugh how things have been. At the old apartment, the burned-down shed is still there, and Hugh runs into Prince. They argue and go separate ways. 3 Juan's is closed down. He gets food from a stand, which reminds him of his success in AZ, and ends up at the park: rundown, dull, and gray.</p>
+</article>
+<article class="card" style="background:#B9CBDD;color:#20303E">
+<h3>19. Ten Years of Silence</h3>
+<p class="sum">In the gray park, Prince won't take the hug. No calls, no letters, nothing.</p>
+<p class="body">Hugh stands in the park and flashes back to it in full color just before he left. The memory punches him in the stomach. Then Prince's voice from the shadows: "Bienvenido, amigo." Hugh spins around and holds out his arms to welcome a long-lost brother, near tears. Prince stops walking, thrown off, throwing up a wall while he processes that his friend is back. "Oh! Yeah? Ha! Loco." Hugh slowly lowers his arms. He tries to explain: he escaped, he thought about Prince all the time, he just couldn't. Prince: "Couldn't what? Couldn't even check in with me? You just leave, and we all had to try and forget what we had, and fight!" Hugh: he kept thinking of the damn fire, the painting, the Roosters and bad guys. Every time he wanted to call, he couldn't do it. He turns away, trying not to show his face.</p>
+</article>
+</section>
+<section class="col">
+<h2>ACT TWO B — THE RETURN</h2>
+<article class="card" style="background:#B9CBDD;color:#20303E">
+<h3>20. Reconciliation</h3>
+<p class="sum">Prince softens. An apology, "I love you, man," and the bro hug to end all bro hugs.</p>
+<p class="body">Prince softens. He kind of hates that it's not so easy to tell Hugh off and move on. "Hermano, lo siento. We thought you just didn't care what happened to us." Hugh: "Nunca, man. I never forgot anything. I'm so damn sorry, and I love you." Prince: "I love you too, Hugh, dios mio!" Prince opens his arms, the reunion hug Hugh thought they'd open with. Hugh wipes his eyes and smiles, reluctantly, cautiously, like, are you sure? Then he goes in for the bro hug to end all bro hugs. "Dios mio, dude."</p>
+</article>
+<article class="card" style="background:#B9CBDD;color:#20303E">
+<h3>21. Prince's War</h3>
+<p class="sum">Prince tells what the Roosters did to the park and shows his sabotage. Reyes recognizes the symbol.</p>
+<p class="body">Prince tells how relentless the Roosters were. Flashback: the Raccoons running gambling games in the park, scaring people out so they can build more apartment towers. "With the nightmares still?" "Same way as when we were kids." We see Raccoons slip through a window and plant the black magic figure under a sleeping woman's bed, and she sits up terrified. Prince: "I been fighting back. Remember the gift my abuela told us about?" At a construction site he draws his symbols under a bulldozer and mumbles words, and the dozer roars to life and crashes into the other machinery. A Raccoon guard yells "Boss, it's happening again!" Reyes arrives, analyzes the scene, and a Rooster points to the half-smashed symbol. "Not my magic, no. But I recognize it." Prince, hiding behind a porta potty and dry heaving, realizes Reyes might understand what's happening. He tells Hugh he expected his uncle to stop him but when he sees him he's just mi tio, friendly, generous, goofy, same as always. Dario and Junior got deeper and deeper into it until they were part of it all, and Prince and they avoid each other at the cafe. Hugh hasn't painted since the fire, and can't. Prince reminds him of the juvie drawings: they changed those guys, some never went back to jail, and some are the ones adding color back to the neighborhood even though the builders cover it up almost as soon as it goes up. He points to a mural: animals playing soccer while construction equipment looms and a worried rabbit watches a wrecking ball. "So are you, homie." "What are you, Mr. Rogers?" "I'm the Haitian Mr. Rogers, man!" "Come on. Let's go see my grandma."</p>
+</article>
+<article class="card" style="background:#BFD6BF;color:#22331F">
+<h3>22. The Grandmother</h3>
+<p class="sum">She gives Hugh his brushes and reveals she's been supplying the paints through Ray's.</p>
+<p class="body">They go see Prince's grandma, still in the land of the living. She gives Hugh his brushes and reveals she's the one who provided the paint to Ray's, and that she knew Prince painted. She also tells Hugh the truth about the old friendship between her and his own grandmother: it's through that friendship that her Haitian tradition first touched his family's bloodline, the real source of his gift. The boys set out and do lots of magic art.</p>
+</article>
+<article class="card" style="background:#B9CBDD;color:#20303E">
+<h3>♪ 23. The Gift Reignites</h3>
+<p class="sum">♪ MUSICAL NUMBER: communal joy. The boys paint through the night and the neighborhood's dreams change.</p>
+<p class="body">MUSICAL NUMBER: the film's most purely fun sequence, though it has to earn that starting from a cold, unresolved fight with Prince. Two people working side by side before either is ready to talk about it, resolving into a wide communal celebration. The melody of The Painted World finally gets answered. The boys paint all sorts of stuff, the music carrying them through. Prince's symbols sabotage more construction. The figures Hugh paints fly, run, crawl, and slither to residents' bedrooms, thwarting the nightmares and replacing them with joyous dreams of community. Morning: the couple on the fence both wake up looking like they've realized the answer, they must stay! In the park and around the neighborhood the energy is popping, and people remark on their dreams and the revitalization of their park. The Roosters and Raccoons are miffed and bring the news to Reyes, who shows up and takes stock of the construction sites and the town. He knows what he has to do. In the hotel, Hugh sleeps in bed and Prince on the couch while Judy makes coffee and watches the news: the town's colorful, mysterious changes, a Rooster complaining about his equipment, residents saying they want to fight the developers and this gave them the courage.</p>
+</article>
+<article class="card" style="background:#CBBBD9;color:#2E2338">
+<h3>24. Reyes Confronts Prince</h3>
+<p class="sum">The twins set the trap and Reyes walks into it. The truth comes out: coercion, not choice.</p>
+<p class="body">The twins set a trap to get the evidence they need, and Reyes falls into it just as planned, right into the confrontation. Reyes confronts Prince directly and the truth comes out: same family craft, same grandmother, a mother who refused the Buyers and Roosters and paid for it. Long ago the operation put Reyes's sister and brother-in-law, Prince's parents, on a boat to nowhere, and he agreed to support the syndicate as long as they left his own mother and Prince alone. He was never choosing power. He has been coerced, protecting the family he has left. He recognized Prince's drawings at the construction site and quietly covered for him for years without a word. For the first time, a real, fragile reconciliation between them.</p>
+</article>
+</section>
+<section class="col">
+<h2>ACT THREE — THE STANDOFF</h2>
+<article class="card" style="background:#B9CBDD;color:#20303E">
+<h3>25. The Erasure</h3>
+<p class="sum">The Raccoons whitewash the work and the Roosters bring in more construction equipment.</p>
+<p class="body">The Raccoons whitewash the neighborhood's work, the murals and chalk art, erasing the color overnight, while the Roosters bring in more construction equipment.</p>
+</article>
+<article class="card" style="background:#BFD6BF;color:#22331F">
+<h3>26. The Community Rallies</h3>
+<p class="sum">Residents band together at city hall and Prince tells them they're going to fight back.</p>
+<p class="body">The residents band together: Willy, Ray, the Juans, juvie kids grown up, and cafe folks meet up at city hall with signs. The local news is there again, and that's where Prince tells them they're going to fight back. At the track, the Roosters and Buyers see it on TV and look to Reyes to stop it. A gearing-up-for-battle montage.</p>
+</article>
+<article class="card" style="background:#BFD6BF;color:#22331F">
+<h3>27. The Standoff</h3>
+<p class="sum">Painted creatures vs. bulldozers, with Reyes forced behind the wheel. Hugh goes down.</p>
+<p class="body">Epic battle: painted creatures, old and new as residents catch on and join in, rise up against bulldozers and earth movers. A cast of animated characters: a flying pig, rockets, eyeballs on long, skinny legs, priests and nuns. They're temporary, attacking with a frantic, beautiful desperation, knowing they only have three seconds to make their life matter before they dissolve into dust. Reyes is forced to drive the machines himself, unable to finish the last one. Every machine crushed breaks a piece of the dark magic's grip on his mind. Dario turns on his brother Junior and the Roosters and sides with Hugh. Mid-battle, Hugh's mother's painted image comes alive and takes down a dozer. Reyes feels a gut punch and remembers growing up with his sister, the sadness of her loss, his mom, the Roosters scaring him. He leaves the battle, and the machines immediately begin weakening, still moving though. The Roosters get concerned and look for Reyes, and tell the Buyers, who say hurry to his mom's. Ray's shop burns. Machines fire up to take down homes while the residents gather to watch. The Roosters capture Hugh, and Hugh goes down. Cut to the ocean.</p>
+</article>
+<article class="card" style="background:#B9CBDD;color:#20303E">
+<h3>♪ 28. Adrift</h3>
+<p class="sum">♪ MUSICAL NUMBER: the final song, and the plot mechanism itself. At rock bottom he draws his mom in seawater and confesses.</p>
+<p class="body">MUSICAL NUMBER: the faint music he follows home and the emotional climax are the same event. Water zooming by, like the opening shot. Hugh wakes on a boat speeding out to sea, the rudder tied in place, on the boat to nowhere. He freaks for a moment, then sits calmly, notices the gas gauge, and turns off the motor. Endless ocean, the sun frying his neck, a life jacket pulled up to cover it. Evening: he loads the one flare, sees a light in the distance, chases it, loses it, chases it again, and finally sits down defeated and cries. The tears on his fingers leave marks on the dry wood. He dips a finger in seawater and draws, and a tiny water illustration of his mom, about five inches tall, abstract, subtly expressing emotion, comes alive and hugs his arm. He confesses: he used to get so angry at her for leaving him alone and scared with no one to go to, so he'd draw and paint and carve to escape till she got home. He realizes he followed in her footsteps and didn't listen when she said slow down. Mom: "It's not about not making mistakes. It's about learning from them. And forgiving yourself, even though it feels impossible. I'm still working on that one myself." "You have nothing to be sorry for, mama." "That's the thing, mijo. We all do. We're all guilty." A loud boat horn: he turns to tell her, but she's evaporating. He fires the flare, the boat keeps going, his engine sputters and dies, and he swims after it and loses it in the waves. Truly alone and powerless, he floats toward sleep. In a dream of clouds turning to faces and eyes, his mom's voice: "You're not done yet, baby. ¡Dale!" He wakes treading water, finds his boat, climbs in, and collapses. At sundown he hears distant music. "¡Dale!" Lights. He swims with all his might, guided by the music as it grows louder. It's the city. Intercut throughout: the courtroom (see 29).</p>
+</article>
+<article class="card" style="background:#CBBBD9;color:#2E2338">
+<h3>29. Resolution</h3>
+<p class="sum">The spell breaks in court, the Roosters are hauled away, and the block celebrates. Hugh reaches shore.</p>
+<p class="body">In court, Nina and Vera sum up the case: residents were systematically scared away so cheap buildings could go up and every corner could be cut. They add that if the mayor hadn't run away he could confirm it all, and the courtroom doors close with an awkwardly loud sound. The Roosters laugh. There's the mayor, standing proudly, sparkling teeth: "Sorry I'm late." Meanwhile Reyes oversees the Roosters handing out crates of cursed stick figures to the Raccoons, who give them to kids in the park, and the kids plant them in the bedrooms of twelve people we recognize as the jury. The spelled jury finds the Roosters innocent: "The apartment building will stay put." Prince jumps on a table, holds up a stick-and-mud figure, and throws it down. It breaks. The jury starts to dance and mutter in unison, and Prince reveals the jury is under a spell. The defendant Roosters stand to defend themselves and knock a glass water pitcher to the floor, crash. Then the Roosters are hauled off in handcuffs, and Ray, the Juans, and the kids celebrate. At a beach condo, Grandma and Reyes watch the news safe and together on the couch, smile, and hug. Hugh makes it to shore, soaked and exhausted, and sees the news on a TV in a store window: the Roosters getting taken away, the apartment building being demolished, and live coverage of the huge block party. In a hospital bed, Dario recovers, watching, happy to see justice and the park filled with celebration.</p>
+</article>
+<article class="card" style="background:#B9CBDD;color:#20303E">
+<h3>30. Button</h3>
+<p class="sum">Willy's boats running clean, 3 Juan's pizza, the mural, and Hugh tells Judy they're going back to Arizona.</p>
+<p class="body">Willy's boats running clean and full of friends. Eating 3 Juan's pizza. The mural. Hugh tells Judy they're going back to Arizona, not to run this time but to finish the fight there too: "I'll stay in touch this time, and you guys can visit." Credits in a different animation style: Hugh and Judy return to AZ and get rid of the snakes and coyotes from their restaurant. The Hialeah gang visits AZ, roasting in a hot car, burning themselves on hot seatbelts, hanging by a pool, eating tacos, and welcoming a baby.</p>
+</article>
+</section>
+</main>
+<script>
+(function () {
+  var btn = document.getElementById("toggle");
+  btn.addEventListener("click", function () {
+    var on = document.body.classList.toggle("details");
+    btn.classList.toggle("on", on);
+    btn.textContent = on ? "Hide detail" : "Show detail";
+  });
+})();
+</script>
+</body>
+</html>
